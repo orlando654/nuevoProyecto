@@ -1,0 +1,13 @@
+<ngx-editor-menu [editor]="editor" [toolbar]="toolbar"></ngx-editor-menu>
+<ngx-editor
+  [editor]="editor"
+  [(ngModel)]="html"
+  >
+</ngx-editor>
+
+<br>
+<button type="button" (click)="Guardar()">Guardar</button>
+
+<br><br>
+
+<div [innerHTML]="html"></div>
